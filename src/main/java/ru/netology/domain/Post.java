@@ -1,12 +1,14 @@
 package ru.netology.domain;
 
+import ru.netology.developers.LikesInfo;
+
 public class Post {
     private int id;
     private String imageUrl;
     private String name;
     private String topic;
     private String text;
-    private String like;
+    private LikesInfo likes;
     private String comment;
     private int date;
     private int time;
@@ -52,12 +54,12 @@ public class Post {
         this.text = text;
     }
 
-    public String getLike() {
-        return like;
+    public LikesInfo getLikes() {
+        return likes;
     }
 
-    public void setLike(String like) {
-        this.like = like;
+    public void setLikes(LikesInfo likes) {
+        this.likes = likes;
     }
 
     public String getComment() {
@@ -91,6 +93,4 @@ public class Post {
     public void setViews(String views) {
         this.views = views;
     }
-
-
 }
